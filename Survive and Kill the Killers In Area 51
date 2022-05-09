@@ -1,3 +1,7 @@
+_G.RedGUI = true
+_G.Theme = "Dark" -- Must disable or remove _G.RedGUI to use
+--Themes: Light, Dark, Mocha, Aqua and Jester
+
 -- SCRIPT MADE BY RIP#6666
 -- DISCORD: https://discord.gg/rips
 
