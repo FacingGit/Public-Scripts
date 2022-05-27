@@ -1,0 +1,10 @@
+--I made this 20 seconds after playing this random game. Get the weapon from the shop.
+
+local weapon = require(game.Players.LocalPlayer.Backpack["M4A1"] .Setting)
+weapon["BaseDamage"] = 1000000
+weapon["FlamingBullet"] = true
+weapon["ExplosiveEnabled"] = true
+weapon["Radius"] = 100
+weapon["FireRate"] = 0.01
+weapon["AmmoPerClip"] = math.huge
+weapon["Lifesteal"] = 100
