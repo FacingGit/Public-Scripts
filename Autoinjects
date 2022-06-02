@@ -2,8 +2,8 @@ if game.PlaceId==4841699106 then --Ninja Tycoon
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Ninja%20Tycoon%20Script"))()
 end
 
-if game.PlaceId==142823291 then --Murder Mystery 2
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Eclipse%20Hub"))()
+if game.PlaceId==142823291 then --GAME-NAME
+
 end
 
 if game.PlaceId== then --GAME-NAME
