@@ -4,7 +4,7 @@ end
 
 if not syn then
 	-- thanks Iris (https://v3rmillion.net/showthread.php?tid=1172094)
-	loadstring(game:HttpGet("https://irisapp.ca/api/Scripts/IrisBetterCompat.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Library/main/PhysicsServiceOnClient.lua"))()
 end
 
 -- thanks 3ds and kiko metatables r hard (https://v3rmillion.net/showthread.php?tid=1089069)
