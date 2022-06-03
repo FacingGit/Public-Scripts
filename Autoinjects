@@ -2,8 +2,8 @@ if game.PlaceId==4841699106 then --Ninja Tycoon
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Ninja%20Tycoon%20Script"))()
 end
 
-if game.PlaceId==142823291 then --GAME-NAME
-
+if game.PlaceId==662417684 then --LUCKY BLOCKS Battlegrounds
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Lucky%20Block%20Battlegrounds"))()
 end
 
 if game.PlaceId== then --GAME-NAME
