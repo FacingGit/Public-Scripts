@@ -1,3 +1,8 @@
+--I removed the discord link from it because it was a annoying notification so here is the discord server: https://discord.gg/5Fy4H82TCq
+--Credits: https://discord.gg/5Fy4H82TCq
+
+
+
 local Name = game.Players.LocalPlayer.Name
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Spawn = game.Players.LocalPlayer.SpawnCFrame
@@ -316,11 +321,4 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-OrionLib:MakeNotification({
-	Name = "GUI",
-	Content = "Copied link to the discord server!",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-setclipboard('https://discord.gg/5Fy4H82TCq')
 OrionLib:Init()
