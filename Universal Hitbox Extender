@@ -47,7 +47,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/w
 SaveManager:SetLibrary(Library)
 SaveManager:SetFolder("HitboxExtender")
 
-local mainWindow = Library:CreateWindow("cheaters get banned.")
+local mainWindow = Library:CreateWindow("Limit Breaker -Skywarsprogamerchair")
 local mainTab = mainWindow:AddTab("Main")
 local mainGroupbox = mainTab:AddLeftGroupbox("Hitbox Extender")
 local ignoresGroupbox = mainTab:AddRightGroupbox("Ignores")
