@@ -1,0 +1,48 @@
+local player = game:GetService("Players").LocalPlayer
+local character = player.Character
+local root = character.HumanoidRootPart
+local tweenservice = game:GetService("TweenService")
+local speed = 300
+local prefix = "."
+ 
+--noclip
+game:GetService("RunService").Stepped:Connect(function()
+    for i,v in next,character:GetDescendants() do
+        pcall(function()
+            v.CanCollide = false
+        end)
+    end
+end)
+ 
+--name shortener
+local getplayer = function(str)
+    for i,v in pairs(game.Players:GetPlayers()) do
+        if string.lower(string.sub(v.Name,1,string.len(str))) == string.lower(str) then
+            return v
+        end
+    end
+end
+ 
+--tween function
+local tween = function(target,spd)
+    local speed = spd or speed
+    local chr = target.Character
+    local distance = (root.Position - chr.HumanoidRootPart.Position).magnitude
+    local tween = tweenservice:Create(root,TweenInfo.new(distance / speed),{CFrame = chr.HumanoidRootPart.CFrame})
+    character.Humanoid.PlatformStand = true
+    tween:Play()
+    tween.Completed:Connect(function()
+        character.Humanoid.PlatformStand = false
+    end)
+end
+ 
+player.Chatted:Connect(function(msg)
+    local command = prefix.."to"
+    local username = msg:match(command..'%s(%w+)')
+    local newspeed = msg:match(command..'%s%w+%s(%w+)')
+    local target = getplayer(username)
+    if target ~= nil then
+        tween(target,newspeed)
+    end
+end)
+print("made by lua god#5322")
