@@ -1,4 +1,4 @@
-local VenyxLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AbamJelek/roblox-scripts/main/Universal%20Vehicle%20Script/venyx.lua"))()
+local VenyxLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Universal/Vehicle%20Speed/Library.lua"))()
 local Venyx = VenyxLibrary.new("Venyx | [UVS] Universal Vehicle Script | shawnjbragdon#0001", 5013109572)
 
 local Players = game:GetService("Players")
