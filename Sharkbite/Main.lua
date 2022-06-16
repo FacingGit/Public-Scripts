@@ -1,4 +1,4 @@
-local library = loadstring(game:HttpGet(" ", true))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Sharkbite/Library.lua", true))()
 LocalPlayer =  game:GetService("Players").LocalPlayer.Name
 
 
