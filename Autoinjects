@@ -6,18 +6,18 @@ if game.PlaceId==662417684 then --LUCKY BLOCKS Battlegrounds
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Lucky%20Block%20Battlegrounds"))()
 end
 
-if game.PlaceId== then --GAME-NAME
-
+if game.PlaceId==443406476 then --Project Lazarus
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Project%20Lazarus/bypass"))()
 end
 
 if game.PlaceId== then --GAME-NAME
-
+loadstring(game:HttpGet(""))()
 end
 
 if game.PlaceId== then --GAME-NAME
-
+loadstring(game:HttpGet(""))()
 end
 
 if game.PlaceId== then --GAME-NAME
-
+loadstring(game:HttpGet(""))()
 end
