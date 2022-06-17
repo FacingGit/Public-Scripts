@@ -8,6 +8,9 @@ end
 
 if game.PlaceId==443406476 then --Project Lazarus
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Project%20Lazarus/bypass"))()
+wait(1)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Project%20Lazarus/One%20Shot"))()
 end
 
 if game.PlaceId== then --GAME-NAME
