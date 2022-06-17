@@ -1,0 +1,7 @@
+old = hookmetamethod(game, "__namecall", function(self, ...)
+if getnamecallmethod() == "InvokeServer" and self.Name == "UpdateDamageKey" then
+   a = {...}
+   getgenv().id = a[1]
+end
+return old(self, ...)
+end)
