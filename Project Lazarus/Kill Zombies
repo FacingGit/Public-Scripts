@@ -1,0 +1,11 @@
+getgenv().Toggle = true
+
+game:GetService("RunService").RenderStepped:Connect(function()
+if getgenv().Toggle then
+    game.ReplicatedStorage.UpdateDamageKey:InvokeServer(1);
+    for i,v in pairs(workspace.Baddies:GetChildren()) do
+        pcall(function()
+            v.Humanoid.Damage:FireServer({["Knifed"] = true, ["BodyPart"] = v.HumanoidRootPart, ["Damage"] = 160}, 1)
+        end)
+    end
+end
