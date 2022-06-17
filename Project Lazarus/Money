@@ -1,0 +1,5 @@
+for i = 1,10000 do
+   coroutine.wrap(function()
+       workspace.Baddies:GetChildren()[1].Humanoid.Damage:FireServer({["Knifed"] = true, ["BodyPart"] = workspace.Baddies:GetChildren()[1].HumanoidRootPart, ["Damage"] = -150}, id)
+   end)()
+end
