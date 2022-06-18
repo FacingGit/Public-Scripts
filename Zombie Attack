@@ -1,0 +1,143 @@
+--You can toggle this by pressing "f"
+--Replace Machine Gun with ur gun name
+
+_G.Gun = "Machine Gun"
+
+_G.AttackToggle = true
+
+
+
+local player = game.Players.LocalPlayer
+
+local mouse = player:GetMouse()
+
+
+
+mouse.KeyDown:connect(function(key)
+
+   if key == "f" then
+
+   if _G.AttackToggle == true then
+
+   _G.AttackToggle = false
+
+   elseif _G.AttackToggle == false then
+
+   _G.AttackToggle = true
+
+   end
+
+   end
+
+end)
+
+
+
+while true do
+
+wait(0.001)
+
+if _G.AttackToggle == true then
+
+   local CharacterRoot = player.Character.HumanoidRootPart
+
+   if player.Character then
+
+   if player.Character:FindFirstChild("HumanoidRootPart") then
+
+   if player.Character:FindFirstChild(_G.Gun) then
+
+   local BossChildren = workspace.BossFolder:GetChildren()
+
+   local BossPos
+
+if #BossChildren ~= 0 then
+
+BossPos = BossChildren[1].Head
+
+game.ReplicatedStorage.Gun:FireServer(
+
+{
+
+["Normal"] = Vector3.new(-0.936548173, 0.000124889062, -0.350539088),
+
+["Direction"] = Vector3.new(247.025284, -8.79878807, 170.003204),
+
+["Name"] = _G.Gun,
+
+["Hit"] = BossPos,
+
+["Origin"] = Vector3.new(121.973915, 114.047012, -293.828491),
+
+["Pos"] = Vector3.new(147.786469, 113.127594, -276.06424),
+
+}
+
+)
+
+end
+
+   local Zombies = workspace.enemies:GetChildren()
+
+   local NearestZombie = Zombies[1]
+
+   local pos
+
+   for i = 2, #Zombies do
+
+       if NearestZombie:FindFirstChild("HumanoidRootPart") then
+
+       if Zombies[i]:FindFirstChild("HumanoidRootPart") then
+
+       local Distance1 = (NearestZombie.HumanoidRootPart.Position - CharacterRoot.Position).Magnitude
+
+       local Distance2 = (Zombies[i].HumanoidRootPart.Position - CharacterRoot.Position).Magnitude
+
+
+
+       if Distance2 < Distance1 then
+
+           NearestZombie = Zombies[i]
+
+           pos = Zombies[i].Head
+
+       end
+
+       end
+
+   end
+
+end
+
+if pos ~= nil then
+
+game.ReplicatedStorage.Gun:FireServer(
+
+{
+
+["Normal"] = Vector3.new(-0.936548173, 0.000124889062, -0.350539088),
+
+["Direction"] = Vector3.new(247.025284, -8.79878807, 170.003204),
+
+["Name"] = _G.Gun,
+
+["Hit"] = pos,
+
+["Origin"] = Vector3.new(121.973915, 114.047012, -293.828491),
+
+["Pos"] = Vector3.new(147.786469, 113.127594, -276.06424),
+
+}
+
+)
+
+end
+
+end
+
+end
+
+end
+
+end
+end
