@@ -1,0 +1,27 @@
+local plr = game:service'Players'.LocalPlayer
+local event = require(plr.PlayerGui.MainPlayerInformation).PickupEvent
+local old
+old = hookmetamethod(game, "__namecall", newcclosure(function(self, ...)
+   if self ~= event and getnamecallmethod() ~= "InvokeServer" then
+       return old(self, ...)
+   end
+   return
+end))
+
+local function f()
+   for _,v in pairs(getconnections(plr.Character.Humanoid.Changed)) do
+       v.Disable()
+   end
+   for _,v in pairs(getconnections(plr.Character.DescendantAdded)) do
+       v.Disable()
+   end
+end
+
+if plr.Character then
+   f()
+end
+
+plr.CharacterAdded:connect(function(c)
+   repeat wait() until c and c.Parent
+   f()
+end)
