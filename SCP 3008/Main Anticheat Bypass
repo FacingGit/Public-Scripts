@@ -1,0 +1,6 @@
+coroutine.resume(coroutine.create(function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/SCP%203008/Semi%20Anti%20Cheat%60'))()
+end))
+coroutine.resume(coroutine.create(function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/SCP%203008/Semi%20Anti%20Cheat'))()
+end))
