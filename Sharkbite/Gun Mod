@@ -1,0 +1,42 @@
+-- Synapse Only
+-- Made by: Mod3rn#1999
+-- Using Racist Dolphin#5199 Dev Console <3
+
+local ps = game:GetService("Players")
+local i = game:GetService("UserInputService")
+local r = game:GetService("RunService")
+local cg = game:GetService("CoreGui")
+local p = ps.LocalPlayer
+local c = p.Character
+local b = p:FindFirstChild("Backpack") or p:WaitForChild("Backpack")
+local mo = p:GetMouse()
+
+p.CharacterAdded:connect(function(char)
+   c = char
+end)
+
+local m = getrawmetatable(game)
+make_writeable(m)
+
+local oldindex = m.__index
+local oldnamecall = m.__namecall
+
+m.__namecall = function(...)
+local t = {...}
+local method = t[#t]
+
+if method == "Play" then
+local env = getfenv(2)
+if env.script then
+if env.script.Parent ~= nil then
+
+debug.setupvalue(2, "maxAmmo", math.huge)
+debug.setupvalue(2, "damage", math.huge)
+debug.setupvalue(2, "speed", math.huge)
+debug.setupvalue(2, "distance", math.huge)
+end
+end
+end
+
+return oldnamecall(...)
+end
