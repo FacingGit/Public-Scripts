@@ -1,3 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Universal/Chat%20Spy"))()
+
+
 if game.PlaceId==4841699106 then --Ninja Tycoon
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Ninja%20Tycoon%20Script"))()
 end
