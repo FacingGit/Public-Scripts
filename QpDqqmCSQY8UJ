@@ -1,0 +1,9 @@
+while true do
+    firetouchinterest(workspace.MoneyBoxes.MoneyBox,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+    wait()
+    firetouchinterest(workspace.MoneyBoxes.MoneyBox,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+    wait()
+        firetouchinterest(workspace.TokenBoxes.TokenBox,game.Players.LocalPlayer.Character.HumanoidRootPart,0)
+    wait()
+    firetouchinterest(workspace.TokenBoxes.TokenBox,game.Players.LocalPlayer.Character.HumanoidRootPart,1)
+end
