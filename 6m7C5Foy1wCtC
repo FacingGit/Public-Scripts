@@ -1,0 +1,28 @@
+local folder = game.Workspace.Training.Swiftness.Stars --folder name
+local player = game.Players.LocalPlayer --player name or leave as is
+
+_G.Condition = true -- true turns it on, false turns it off
+while _G.Condition == true do
+    player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ranches.Skywarsprogamerchair.Ground.CFrame
+    wait(1)
+        player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Training.Swiftness.Triggers.Trigger.CFrame
+        wait(2)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame --part you teleport to change PARTNAME to brick name
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait(0.523)
+player.Character.HumanoidRootPart.CFrame = folder.Skywarsprogamerchair.CFrame
+wait()
+end
