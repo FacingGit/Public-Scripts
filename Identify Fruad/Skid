@@ -18,7 +18,7 @@ local MyChar = MyPlr.Character
 local Settings = {
     ESPEnabled = false,
     ChamsEnabled = false,
-    ESPLength = 1500,
+    ESPLength = 99999,
     ChamsLength = 1500,
     MobChams = true,
     MobESP = true,
@@ -508,7 +508,10 @@ Tab:Button("Rejoin Game", function()
     TeleportService:Teleport(game.PlaceId, MyPlr)
 end)
 Tab:Button("Bypass Anti-Cheat", function()
-    MyChar.Frigid:Destroy()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Identify%20Fruad/AntiCheat%20Bypass'))()
+end)
+Tab:Button("Infinte Sky FE 5.9", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/FacingGit/Public-Scripts/main/Identify%20Fruad/AntiCheat%20Bypass'))()
 end)
 Tab:Slider("WalkSpeed", 17, 50, 17, function(Value)
     MyChar.Humanoid.WalkSpeed = Value
@@ -536,10 +539,8 @@ Tab2:Colorpicker("Monster Color", Color3.fromRGB(210, 29, 29), function(Color)
     Settings.Colors.NPC = Color
 end)
 -- Credits Tab
-Tab3:Label("Script by arcranes.")
+Tab3:Label("Original Script by arcranes.")
+Tab3:Label("Script edited & fixed features by FacingGit.")
 Tab3:Label("Identity Fraud ESP is made by Pistol on forums.")
-Tab3:Button("Copy Discord Link", function()
-    setclipboard("korra#1111")
-end)
 Tab3:Label("The original ESP is Project Bullshit made by Racist Dolphin")
 Tab3:Label("Enjoy.")
