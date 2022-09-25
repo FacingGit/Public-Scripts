@@ -8,7 +8,7 @@ Esp.Enabled = false
 Esp.Tracers = false
 Esp.Boxes = false
 
-local Window = Library:CreateWindow("Evade 💀", Vector2.new(500, 300), Enum.KeyCode.RightShift)
+local Window = Library:CreateWindow("Boredom Evade", Vector2.new(500, 300), Enum.KeyCode.RightShift)
 local Evade = Window:CreateTab("General")
 local Gamee = Window:CreateTab("Game")
 local Configs = Window:CreateTab("Settings")
@@ -119,7 +119,7 @@ Visuals:AddColorpicker("Downed Player Color", Color3.fromRGB(255,255,255), funct
 end)
 
 
-Credits:AddLabel("Developed By xCLY And batusd")
+Credits:AddLabel("Developed By M_2Sky")
 Credits:AddLabel("UI Lib: Jans Lib")
 Credits:AddLabel("ESP Lib: Kiriot")
 Configs:CreateConfigSystem()
