@@ -1,6 +1,6 @@
 -- Original here: https://raw.githubusercontent.com/AbstractPoo/Main/main/Notifications.lua
 -- V3rmillion: https://v3rmillion.net/showthread.php?pid=8122366
-
+-- module by Abstract#8007
 local rs = game:GetService("RunService")
 local ts = game:GetService("TweenService")
 
